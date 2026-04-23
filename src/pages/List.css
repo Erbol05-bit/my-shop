@@ -1,0 +1,139 @@
+.list-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px 24px;
+  }
+  
+  .list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  
+  .list-header h2 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  .list-filters {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    align-items: center;
+    background: var(--bg);
+    padding: 16px;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+  }
+  
+  .list-filters input,
+  .list-filters select {
+    padding: 8px 12px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-size: 14px;
+    background: var(--bg-secondary);
+    color: var(--text);
+    outline: none;
+    transition: border 0.2s;
+  }
+  
+  .list-filters input:focus,
+  .list-filters select:focus {
+    border-color: var(--green);
+  }
+  
+  .list-filters input {
+    width: 220px;
+  }
+  
+  .list-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 20px;
+  }
+  
+  .list-card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: box-shadow 0.2s, transform 0.2s;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .list-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+  }
+  
+  .list-card-img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    background: var(--bg-secondary);
+    padding: 16px;
+  }
+  
+  .list-card-body {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  .list-card-category {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--green-dark);
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  
+  .list-card-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 8px;
+    line-height: 1.4;
+    flex: 1;
+  }
+  
+  .list-card-price {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--green-dark);
+    margin-bottom: 12px;
+  }
+  
+  .list-card-actions {
+    display: flex;
+    gap: 6px;
+  }
+  
+  .list-card-actions .btn {
+    flex: 1;
+    font-size: 13px;
+    padding: 7px 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .list-filters input {
+      width: 100%;
+    }
+  
+    .list-filters {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .list-filters select {
+      width: 100%;
+    }
+  }

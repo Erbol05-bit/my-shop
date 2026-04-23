@@ -1,0 +1,114 @@
+.details-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 32px 24px;
+  }
+  
+  .details-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 24px;
+    transition: color 0.2s;
+  }
+  
+  .details-back:hover {
+    color: var(--green-dark);
+  }
+  
+  .details-card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+  }
+  
+  .details-img-wrap {
+    flex-shrink: 0;
+    width: 260px;
+    height: 280px;
+    background: var(--bg-secondary);
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .details-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .details-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .details-category {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--green-dark);
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .details-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 12px;
+    line-height: 1.3;
+  }
+  
+  .details-price {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--green-dark);
+    margin-bottom: 12px;
+  }
+  
+  .details-rating {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 16px;
+  }
+  
+  .details-description {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 28px;
+    flex: 1;
+  }
+  
+  .details-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .details-actions .btn {
+    padding: 10px 24px;
+  }
+  
+  @media (max-width: 768px) {
+    .details-card {
+      flex-direction: column;
+      padding: 24px;
+      gap: 24px;
+    }
+  
+    .details-img-wrap {
+      width: 100%;
+      height: 220px;
+    }
+  }

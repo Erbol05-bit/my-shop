@@ -1,0 +1,117 @@
+.myitems-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px 24px;
+  }
+  
+  .myitems-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+  }
+  
+  .myitems-header h2 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  .myitems-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 20px;
+  }
+  
+  .myitems-card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: box-shadow 0.2s, transform 0.2s;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .myitems-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+  }
+  
+  .myitems-card-img {
+    width: 100%;
+    height: 170px;
+    object-fit: contain;
+    background: var(--bg-secondary);
+    padding: 16px;
+  }
+  
+  .myitems-card-body {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  .myitems-card-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    line-height: 1.4;
+    flex: 1;
+  }
+  
+  .myitems-card-price {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--green-dark);
+    margin-bottom: 12px;
+  }
+  
+  .myitems-card-actions {
+    display: flex;
+    gap: 6px;
+  }
+  
+  .myitems-card-actions .btn {
+    flex: 1;
+    font-size: 13px;
+    padding: 7px 10px;
+  }
+  
+  .myitems-empty {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-secondary);
+  }
+  
+  .myitems-empty p {
+    margin-bottom: 16px;
+    font-size: 16px;
+  }
+
+  @media (max-width: 768px) {
+    .myitems-page {
+      padding: 20px 16px;
+    }
+  
+    .myitems-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+    }
+  
+    .myitems-header .btn {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .myitems-grid {
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 12px;
+    }
+  
+    .myitems-card-actions {
+      flex-direction: column;
+    }
+  }

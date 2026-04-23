@@ -1,0 +1,111 @@
+.navbar {
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .navbar-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .navbar-logo {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--green);
+    margin-right: 16px;
+  }
+  
+  .navbar-link {
+    padding: 6px 12px;
+    border-radius: var(--radius);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    transition: background 0.2s, color 0.2s;
+  }
+  
+  .navbar-link:hover {
+    background: var(--bg-secondary);
+    color: var(--text);
+  }
+  
+  .navbar-link.active {
+    color: var(--green);
+    background: var(--green-light);
+  }
+  
+  .navbar-admin-link {
+    padding: 6px 12px;
+    border-radius: var(--radius);
+    font-size: 14px;
+    font-weight: 500;
+    color: #f97316;
+    transition: background 0.2s;
+  }
+  
+  .navbar-admin-link:hover {
+    background: #fff7ed;
+  }
+  
+  .navbar-right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .navbar-username {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text);
+    padding: 6px 12px;
+    border-radius: var(--radius);
+    transition: background 0.2s;
+  }
+  
+  .navbar-username:hover {
+    background: var(--bg-secondary);
+  }
+  
+  .navbar-logout {
+    padding: 6px 14px;
+    border-radius: var(--radius);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    background: none;
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+    transition: background 0.2s, color 0.2s;
+  }
+  
+  .navbar-logout:hover {
+    background: var(--red-light);
+    color: var(--red);
+    border-color: var(--red);
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-inner {
+      padding: 0 16px;
+      flex-wrap: wrap;
+      height: auto;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      gap: 6px;
+    }
+  
+    .navbar-logo {
+      width: 100%;
+      margin-bottom: 4px;
+    }
+  }
