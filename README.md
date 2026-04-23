@@ -2,9 +2,6 @@
 
 A modern e-commerce web application built with React.
 
-## 🚀 Live Demo
-[myshop.vercel.app](https://myshop.vercel.app)
-
 ## 🛠️ Tech Stack
 - React 18
 - React Router v6
